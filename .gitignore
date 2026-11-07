@@ -1,0 +1,11 @@
+# Local environments and generated caches
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.zip
+.DS_Store
+Thumbs.db
+# Keep model downloads and ACE-Step worktree outside this project repository
+work/

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>露奈 Luna · 流星糖故事 MV</title>
+<style>
+:root{--ink:#422b3c;--cream:#fff9f2;--pink:#ffb4c6;--lav:#bea8e7;--gold:#ffd77d}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 0,#fff3f7 0,#f1e9ff 45%,#d8d2ef 100%);font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:var(--ink);display:flex;justify-content:center;padding:24px}
+.shell{width:min(1100px,100%);display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px;align-items:start}.card{background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.85);box-shadow:0 18px 48px rgba(72,48,95,.18);border-radius:28px;overflow:hidden;backdrop-filter:blur(12px)}
+.stage{position:relative;aspect-ratio:9/16;max-height:78vh;background:#272034;overflow:hidden;--beat:0}.scene{position:absolute;inset:0;opacity:0;transform:scale(1.045);transition:opacity .62s ease,transform 5.6s cubic-bezier(.2,.7,.2,1)}.scene.active{opacity:1;transform:scale(1)}.scene img{width:100%;height:100%;object-fit:cover;display:block;animation:kenburns 5.6s cubic-bezier(.2,.7,.2,1) both;filter:brightness(calc(1 + var(--beat)*.055)) saturate(calc(1 + var(--beat)*.08));transition:filter .12s ease}.scene:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,13,33,.18),transparent 55%,rgba(27,17,43,.48))}.brand{position:absolute;top:22px;left:24px;z-index:3;color:#fff;font-weight:700;letter-spacing:.08em;text-shadow:0 2px 14px #3a234f}.brand small{display:block;font-weight:500;letter-spacing:.18em;opacity:.82;margin-top:3px}.caption{position:absolute;left:24px;right:24px;bottom:70px;z-index:3;color:#fff;text-shadow:0 2px 16px #3a234f}.caption .eyebrow{font-size:12px;letter-spacing:.18em;opacity:.85}.caption h1{margin:8px 0 0;font-size:clamp(22px,4vw,38px);font-weight:700}.caption p{margin:8px 0 0;font-size:14px;opacity:.92}.dots{position:absolute;bottom:24px;left:24px;z-index:4;display:flex;gap:7px}.dot{width:8px;height:8px;border-radius:20px;background:rgba(255,255,255,.46);transition:.3s}.dot.active{width:24px;background:#fff}
+.panel{padding:24px}.panel h2{margin:0 0 6px;font-size:22px}.panel .sub{margin:0 0 18px;color:#7a6681;font-size:13px;line-height:1.5}.timeline{height:7px;border-radius:20px;background:#e8dff2;overflow:hidden;margin:18px 0 8px}.timeline>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--lav),var(--gold));border-radius:inherit}.time{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;font-size:12px;color:#866e86}.controls{display:flex;gap:8px;margin:18px 0}.btn{border:0;border-radius:14px;padding:11px 14px;font-weight:700;color:var(--ink);background:#f5eaf6;cursor:pointer}.btn.primary{background:linear-gradient(135deg,#ffb0c2,#c9b9f2);box-shadow:0 6px 14px rgba(184,132,185,.28)}.btn:hover{filter:brightness(1.03);transform:translateY(-1px)}.file{display:block;border:1px dashed #cdbedb;border-radius:14px;padding:12px;font-size:12px;color:#7a6681;background:#fff9}.file input{width:100%;margin-top:8px}.scene-list{display:grid;gap:9px;margin-top:20px}.scene-row{display:flex;gap:10px;align-items:center;padding:10px;border-radius:15px;background:rgba(255,255,255,.58);font-size:13px}.scene-row .num{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:#f1e2f2;font-weight:700}.scene-row.active{background:#fff0f4;outline:1px solid #f3bbca}.scene-row b{display:block}.scene-row span{display:block;color:#8c748d;font-size:11px;margin-top:2px}.links{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}.link{font-size:12px;color:#6c4f77;text-decoration:none;background:#fff;padding:8px 10px;border-radius:10px}.note{margin-top:16px;font-size:12px;line-height:1.6;color:#7c6d80}.stage:before{content:"";position:absolute;z-index:2;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 42%,rgba(255,232,194,calc(.05 + var(--beat)*.16)),transparent 45%);mix-blend-mode:screen;transition:background .12s ease}.scene.active img{transform-origin:center center}@keyframes kenburns{0%{transform:scale(1.03) translate3d(0,0,0)}50%{transform:scale(1.09) translate3d(-.8%, -.5%,0)}100%{transform:scale(1.045) translate3d(.4%, .2%,0)}}
+@media(max-width:820px){body{padding:12px}.shell{grid-template-columns:1fr}.stage{max-height:none}.panel{padding:18px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <section class="card">
+    <div class="stage" id="stage">
+      <div class="scene active" data-start="0"><img src="video/assets/story-sing.png" alt="露奈 Luna 唱歌"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">01 · 开场</div><h1>把第一颗星唱给你听</h1><p>麦克风亮起，夜空开始回应。</p></div></div>
+      <div class="scene" data-start="4"><img src="video/assets/story-high-note.png" alt="露奈 Luna 闭眼高音"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">02 · 高音</div><h1>把心跳唱成一束光</h1><p>闭上眼，副歌正好落下。</p></div></div>
+      <div class="scene" data-start="8"><img src="video/assets/story-sugar.png" alt="露奈 Luna 接住流星糖"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">03 · 相遇</div><h1>接住一颗流星糖</h1><p>甜甜的光，刚好落在掌心。</p></div></div>
+      <div class="scene" data-start="12"><img src="video/assets/story-wink.png" alt="露奈 Luna 眨眼比心"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">04 · 俏皮</div><h1>给你一个星星暗号</h1><p>眨一下眼，愿望就生效。</p></div></div>
+      <div class="scene" data-start="16"><img src="video/assets/story-look-up.png" alt="露奈 Luna 仰望流星雨"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">05 · 仰望</div><h1>抬头就是整片银河</h1><p>每一束流星，都是合唱的和声。</p></div></div>
+      <div class="scene" data-start="20"><img src="video/assets/story-surprise.png" alt="露奈 Luna 惊喜表情"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">06 · 惊喜</div><h1>它真的听见了</h1><p>一颗糖果，把夜空点亮。</p></div></div>
+      <div class="scene" data-start="24"><img src="video/assets/story-celebrate.png" alt="露奈 Luna 张手庆祝"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">07 · 合唱</div><h1>一起唱到星星醒来</h1><p>把快乐全部交给这一拍。</p></div></div>
+      <div class="scene" data-start="27"><img src="video/assets/story-wave.png" alt="露奈 Luna 挥手"><div class="brand">露奈 LUNA<small>METEOR CANDY</small></div><div class="caption"><div class="eyebrow">08 · 约定</div><h1>下次见，别忘了抬头</h1><p>把这颗糖的甜，留到下一首歌。</p></div></div>      <div class="dots"><i class="dot"></i> <i class="dot"></i> <i class="dot"></i> <i class="dot"></i> <i class="dot"></i> <i class="dot"></i> <i class="dot"></i> <i class="dot"></i></div>
+    </div>
+  </section>
+  <aside class="card panel">
+    <h2>流星糖 · 故事 MV</h2>
+    <p class="sub">8 个完整姿势与表情 + 镜头推拉切换。每 3–4 秒自动轮播，配合 ACE-Step 音频更像短 MV。</p>
+    <div class="controls"><button class="btn primary" id="play">▶ 播放预览</button><button class="btn" id="reset">↺ 重置</button></div>
+    <label class="file">选择《流星糖》音频（可选）<input id="audioFile" type="file" accept="audio/*"></label>
+    <audio id="audio" preload="metadata"></audio>
+    <div class="timeline"><i id="bar"></i></div><div class="time"><span id="cur">00:00</span><span id="dur">00:30</span></div>
+    <div class="scene-list" id="sceneList">
+      <div class="scene-row active"><div class="num">1</div><div><b>唱给你听</b><span>00:00 — 00:04</span></div></div>
+      <div class="scene-row"><div class="num">2</div><div><b>闭眼高音</b><span>00:04 — 00:08</span></div></div>
+      <div class="scene-row"><div class="num">3</div><div><b>接住流星糖</b><span>00:08 — 00:12</span></div></div>
+      <div class="scene-row"><div class="num">4</div><div><b>眨眼暗号</b><span>00:12 — 00:16</span></div></div>
+      <div class="scene-row"><div class="num">5</div><div><b>仰望银河</b><span>00:16 — 00:20</span></div></div>
+      <div class="scene-row"><div class="num">6</div><div><b>惊喜发现</b><span>00:20 — 00:24</span></div></div>
+      <div class="scene-row"><div class="num">7</div><div><b>张手合唱</b><span>00:24 — 00:27</span></div></div>
+      <div class="scene-row"><div class="num">8</div><div><b>挥手约定</b><span>00:27 — 00:30</span></div></div>
+    </div>    <div class="links"><a class="link" href="video-workbench.html">← 返回视频工作台</a><a class="link" href="puppet-test.html">查看旧版试验</a></div>
+    <p class="note">没有音频时按 30 秒样片播放；选择音频后，8 幕会按实际时长重新分配，音量节奏还会驱动画面亮度呼吸与轻微推近。</p>
+  </aside>
+</div>
+<script>
+const scenes=[...document.querySelectorAll('.scene')],dots=[...document.querySelectorAll('.dot')],rows=[...document.querySelectorAll('.scene-row')],play=document.querySelector('#play'),reset=document.querySelector('#reset'),audio=document.querySelector('#audio'),file=document.querySelector('#audioFile'),bar=document.querySelector('#bar'),cur=document.querySelector('#cur'),dur=document.querySelector('#dur'),stage=document.querySelector('#stage');
+const fractions=[0,.13,.27,.40,.53,.67,.80,.90]; let running=false,raf=0,meterRaf=0,virtual=0,total=30,starts=[],current=-1,lastNow=0,audioCtx=null,analyser=null,sourceNode=null,fft=null;
+function fmt(s){s=Math.max(0,Math.floor(s));return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function getTotal(){return audio.src&&Number.isFinite(audio.duration)&&audio.duration>0?audio.duration:30}
+function rebuildStarts(){total=getTotal();starts=fractions.map(v=>v*total);}
+function setScene(i){if(i===current)return;current=i;scenes.forEach((s,n)=>s.classList.toggle('active',n===i));dots.forEach((d,n)=>d.classList.toggle('active',n===i));rows.forEach((r,n)=>r.classList.toggle('active',n===i))}
+function syncScene(t){if(!starts.length)rebuildStarts();const i=starts.reduce((acc,v,n)=>t>=v?n:acc,0);setScene(i);bar.style.width=Math.min(100,t/total*100)+'%';cur.textContent=fmt(t);dur.textContent=fmt(total)}
+function tick(now=performance.now()){if(!lastNow)lastNow=now;if(running&&!audio.src){virtual=Math.min(total,virtual+Math.min(.06,(now-lastNow)/1000))}lastNow=now;const t=audio.src&&!audio.paused&&!audio.ended?Math.min(audio.currentTime,total):virtual;syncScene(t);if(running){if(t>=total){running=false;play.textContent='▶ 播放预览';stage.classList.remove('playing');}else{raf=requestAnimationFrame(tick)}}}
+function startMeter(){if(!audio.src)return;if(!audioCtx){audioCtx=new (window.AudioContext||window.webkitAudioContext)();analyser=audioCtx.createAnalyser();analyser.fftSize=256;sourceNode=audioCtx.createMediaElementSource(audio);sourceNode.connect(analyser);analyser.connect(audioCtx.destination);fft=new Uint8Array(analyser.frequencyBinCount)}if(audioCtx.state==='suspended')audioCtx.resume();const meter=()=>{if(!analyser||audio.paused||audio.ended){stage.style.setProperty('--beat','0');return}analyser.getByteFrequencyData(fft);let sum=0;for(let i=0;i<fft.length;i++)sum+=fft[i];const energy=Math.min(1,(sum/fft.length)/170);stage.style.setProperty('--beat',energy.toFixed(3));meterRaf=requestAnimationFrame(meter)};cancelAnimationFrame(meterRaf);meter()}
+play.onclick=()=>{if(running){running=false;if(audio.src)audio.pause();play.textContent='▶ 播放预览';stage.classList.remove('playing');cancelAnimationFrame(meterRaf);stage.style.setProperty('--beat','0');return}rebuildStarts();if(audio.src){if(audio.ended||audio.currentTime>=total-.05)audio.currentTime=0;audio.play().then(startMeter).catch(()=>{});}else{virtual=0}running=true;lastNow=0;play.textContent='❚❚ 暂停';stage.classList.add('playing');cancelAnimationFrame(raf);raf=requestAnimationFrame(tick)};
+reset.onclick=()=>{running=false;cancelAnimationFrame(raf);cancelAnimationFrame(meterRaf);virtual=0;lastNow=0;stage.style.setProperty('--beat','0');if(audio.src){audio.pause();audio.currentTime=0}rebuildStarts();current=-1;syncScene(0);play.textContent='▶ 播放预览';stage.classList.remove('playing')};
+file.onchange=e=>{const f=e.target.files?.[0];if(!f)return;audio.src=URL.createObjectURL(f);audio.load();audio.onloadedmetadata=()=>{rebuildStarts();syncScene(audio.currentTime||0)};audio.onended=()=>{running=false;stage.classList.remove('playing');play.textContent='▶ 播放预览';stage.style.setProperty('--beat','0');syncScene(total)}};
+rows.forEach((r,i)=>r.onclick=()=>{rebuildStarts();const t=starts[i]||0;virtual=t;syncScene(t);if(audio.src)audio.currentTime=t});
+rebuildStarts();syncScene(0);
+</script>
+</body></html>
+
+

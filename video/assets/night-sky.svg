@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+<defs>
+  <radialGradient id="bg" cx="70%" cy="10%"><stop stop-color="#51438b"/><stop offset=".45" stop-color="#1e234b"/><stop offset="1" stop-color="#090d22"/></radialGradient>
+  <linearGradient id="road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9bd4" stop-opacity=".95"/><stop offset="1" stop-color="#7e83ff" stop-opacity=".05"/></linearGradient>
+</defs>
+<rect width="1080" height="1920" fill="url(#bg)"/>
+<path d="M-80 1640 C230 1420 560 1480 1160 1100 L1160 1920 -80 1920Z" fill="url(#road)" opacity=".42"/>
+<g fill="#fff4bb" opacity=".9"><circle cx="120" cy="260" r="5"/><circle cx="900" cy="310" r="7"/><circle cx="230" cy="610" r="4"/><circle cx="790" cy="690" r="5"/><circle cx="980" cy="880" r="4"/><circle cx="120" cy="1030" r="6"/><circle cx="630" cy="220" r="3"/></g>
+<g fill="#ffd7f1" opacity=".75"><circle cx="300" cy="320" r="3"/><circle cx="740" cy="470" r="3"/><circle cx="430" cy="760" r="4"/><circle cx="870" cy="1140" r="3"/></g>
+<g transform="translate(160 210) rotate(-18)"><path d="M0 0 L250 -48 L55 42Z" fill="#fff0a5" opacity=".85"/><circle cx="32" cy="6" r="18" fill="#fffbe2"/></g>
+</svg>
